@@ -1,0 +1,23 @@
+mongoose 
+express
+dotenv -> variables de entorno (para no tener strings de conexion en el codigo)
+cors -> politicas de acceso al server (seguridad)
+helmet -> seguridad del servidor (DDoS)
+morgan -> logger, manejo de logs
+bcrypt -> encriptar contraseñas (encriptar datos)
+jsonwebtoken -> manejo de sesiones basado en tokens
+
+Dependencia de desarrollo (solo sirve en la fase de desarrollo)
+nodemon -> live server (Detectar cambios en el codigo)
+
+
+Descargar dependencias 
+npm i mongoose express cors helmet morgan bcrypt dotenv
+
+
+Descargar una dependencia en modo desarrollo
+npm i -D nodemon
+
+
+Para correr nodemon
+npm run dev
