@@ -1,40 +1,39 @@
-import mongoose from "mongoose";
+import { Schema, model } from 'mongoose'
 
-
-const animalSchema = mongoose.Schema({
-    name:{
+const animalSchema = Schema({
+    name: {
         type: String,
         required: true
     },
-    race:{
+    race: {
         type: String,
         required: true
     },
-    size:{
+    size: {
         type: String,
         required: true
     },
-    sex:{
+    sex: {
         type: String,
         required: true
     },
-    age:{
+    age: {
         type: Number,
         required: true
     },
-    color:{
+    color: {
         type: String,
         required: true
     },
-    animalType:{
+    animalType: {
         type: String,
         required: true
     },
-    keeper:{
-        type: String,
+    keeper: {
+        type: Schema.ObjectId,
+        ref: 'user',
         required: true
     }
 })
 
-
-export default mongoose.model('animal', animalSchema)
+export default model('animal', animalSchema)

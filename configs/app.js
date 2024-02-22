@@ -8,6 +8,7 @@ import morgan from 'morgan'
 import { config } from 'dotenv'
 import userRoutes from '../src/user/user.routes.js'
 import animalRoutes from '../src/animal/animal.routes.js'
+import appointmentRoutes from '../src/appointment/appointment.routes.js'
 
 
 //Configuraciones
@@ -24,7 +25,8 @@ app.use(morgan('dev')) //Crea logs de solicitudes al servidor HTTP
 
 //Declaracion de rutas
 app.use(userRoutes)
-app.use(animalRoutes)
+app.use('/animal', animalRoutes) //localhost:2880/animal/test
+app.use('/appointment', appointmentRoutes)
 
 
 //Levantar el servidor
