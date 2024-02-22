@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #70d16b, #00d19b, #00cdc5, #00c5e4, #0cbaf1,
+    #3dbcf4, #56bdf6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+/* ---------- SECTION ---------- */
+section {
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid black;
+    flex-wrap: wrap;
+
+}
+
+/* ---------- BOTONES ---------- */
+section #letras button {
+    background-color: #1D838C;
+    color: black;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 3.5px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+section #letras button:hover {
+    background-color: #94B0B3;
+}
+
+section #letras button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: white;
+    border-color: 1px solid white;
+    color: grey;
+}
+
+#btnProgramador{
+    background-image: url('./Img/Programador.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#btnProgramador{
+    cursor: pointer;
+}
+
+/* --------------- Boton de programador --------------- */
+/* Establece el ancho y la altura de la ventana emergente del mensaje */
+.swal2-popup {
+    width: 400px; /* Cambia el ancho según tus necesidades */
+    height: 350px; /* Cambia la altura según tus necesidades */
+}
+
+.swal2-title {
+    width: 88%; /* Cambia el ancho */
+}
+
+/* ---------- LETRAS ---------- */
+#letras {
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+/* ---------- BASE DE LA HORCA ---------- */
+#contenedorBaseHorca {
+    margin-left: 90px;
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#horca {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    color: white;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gancho {
+    display: none;
+    width: 10px;
+    height: 40px;
+    background-color: black;
+    color: black;
+    margin-left: 170px;
+    margin-top: 0px;
+}
+
+#baseDibujo {
+    background-color: black;
+    color: black;
+    width: 250px;
+    height: 15px;
+    margin-left: 25px;
+}
+
+#posteDibujo {
+    background-color: black;
+    color: black;
+    height: 220px;
+    width: 10px;
+    margin-left: 50px;
+    margin-top: -40px;
+}
+
+#posteAcostado {
+    background-color: black;
+    color: black;
+    height: 10px;
+    width: 150px;
+    margin-left: 25px;
+    position: absolute;
+    z-index: 50;
+}
+
+
+/* ---------- CUERPO DEL MUÑECO ---------- */
+#contenedorCuerpoMuneco {
+    width: 300px;
+    height: 200px;
+    margin-top: -261px;
+    margin-left: 370px;
+    background-color: transparent;
+}
+
+#cabeza {
+    display: none;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: black;
+    margin-left: 127px;
+}
+
+#cuerpo {
+    display: none;
+    background-color: black;
+    width: 10px;
+    height: 75px;
+    color: black;
+    margin-left: 150px;
+    border-radius: 5px;
+    color: black;
+}
+
+#brazoDerecho {
+    display: none;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    margin-top: -62px;
+    margin-left: 150px;
+    transform: rotate(45deg);
+    color: black;
+    border-radius: 5px;
+}
+
+#brazoIzquierdo {
+    display: none;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    margin-top: -7px;
+    margin-left: 110px;
+    transform: rotate(-45deg);
+    color: black;
+    border-radius: 5px;
+}
+
+#pieDerecho {
+    display: none;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    margin-top: 60px;
+    margin-left: 145px;
+    transform: rotate(45deg);
+    color: black;
+    border-radius: 5px;
+}
+
+#pieIzquierdo {
+    display: none;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    margin-top: -7px;
+    margin-left: 115px;
+    transform: rotate(-45deg);
+    color: black;
+    border-radius: 5px;
+}
+
+/* ---------- H2 ----------*/
+h2 {
+    margin-top: 10px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* --------- ---------- */
+#palabra_a_adivinar {
+    width: 500px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#palabra_a_adivinar span {
+    display: inline-block;
+    color: black;
+    margin-right: 5px;
+    width: 25px;
+    height: 30px;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+}
+
+#jugar_de_nuevo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    width: 150px;
+    height: 30px;
+    background-color: #5D8FC5;
+    border-radius: 10px;
+    border: 1px dotted black;
+}
+
+#jugar_de_nuevo:hover {
+    background-image: linear-gradient(to right top, #d4b6df, #ffb0cf, #ffb69c, #ffd662, #cdff5b);
+    color: black;
+    cursor: pointer;    
+}
+
+#jugar_de_nuevo:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-image: none;
+    color: white;
+}
+
+/* ---------- RESULTADO ---------- */
+#resultado {
+    margin-top: -50px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    height: 50px;
+}
+
+
+/* ---------- CANVAS ---------- */
+#canvas {
+    width: 400px;
+    height: 300px;
+    margin-top: -10PX;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hacer responsive la pagina */
+@media(max-width: 1024px) {
+    section {
+        width: 800px;
+        height: 580px;
+    }
+}
+
+@media(max-width: 830px) {
+    section {
+        width: 600px;
+        height: 650px;
+    }
+}
+
+@media(max-width: 630px) {
+    section {
+        width: 560px;
+        height: 750px;
+    }
+}
